@@ -15,5 +15,5 @@ int fib(int n){
 int main(){
     //print the output of fib function
     cout << fib(8) << endl;
-
+    return 0;
 }
