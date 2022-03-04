@@ -1,8 +1,4 @@
 # Binary Tree
-
-from tkinter.messagebox import NO
-
-
 class Node:
     def __init__(self, key):
         self.left = None
@@ -21,7 +17,7 @@ class Node:
     def traverseInOrder(self):
         if self.left:
             self.left.traverseInOrder()
-        print(self.val, key=' ')
+        print(self.val, end=' ')
         if self.right:
             self.right.traverseInOrder()
 
