@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-//function to conversion of decimal to binary using recursion
 void convertDecimalToBinary(int n){
     if(n == 0){
         return;

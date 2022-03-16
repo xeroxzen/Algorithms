@@ -2,7 +2,6 @@
 using namespace std;
 
 int fib(int n){
-    //return the nth value of a fibonacci sequence
     if(n == 0){
         return 0;
     }
@@ -13,7 +12,6 @@ int fib(int n){
 }
 
 int main(){
-    //print the output of fib function
     cout << fib(8) << endl;
     return 0;
 }
