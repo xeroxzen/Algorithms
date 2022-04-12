@@ -1,20 +1,23 @@
 #include <iostream>
 using namespace std;
 
-//Tree traversal in C++
-//Node for tree traversal
-struct Node {
+// Tree traversal in C++
+// Node for tree traversal
+struct Node
+{
     int data;
     struct Node *left, *right;
-    Node(int data){
+    Node(int data)
+    {
         this->data = data;
         left = right = NULL;
     }
 };
 
-//Preorder traversal in C++
-void preorderTraversal(struct Node* node) {
-    if(node == NULL)
+// Preorder traversal
+void preorderTraversal(struct Node *node)
+{
+    if (node == NULL)
         return;
 
     cout << node->data << "->";
@@ -22,27 +25,30 @@ void preorderTraversal(struct Node* node) {
     preorderTraversal(node->right);
 }
 
-//Postorder traversal in C++
+// Postorder traversal
 
-void postorderTraversal(struct Node* node){
-    if(node == NULL)
+void postorderTraversal(struct Node *node)
+{
+    if (node == NULL)
         return;
     postorderTraversal(node->left);
     postorderTraversal(node->right);
     cout << node->data << "->";
 }
 
-//Inorder traversal in C++
-void inorderTraversal(struct Node* node){
-    if(node == NULL)
+// Inorder traversal
+void inorderTraversal(struct Node *node)
+{
+    if (node == NULL)
         return;
-    
+
     inorderTraversal(node->left);
     cout << node->data << "->";
     inorderTraversal(node->right);
 }
 
-int main(){
+int main()
+{
     struct Node *root = new Node(1);
     root->left = new Node(12);
     root->right = new Node(9);
@@ -52,10 +58,9 @@ int main(){
     cout << "Inorder Traversal ";
     inorderTraversal(root);
 
-    cout <<"Preorder Traversal ";
+    cout << "Preorder Traversal ";
     preorderTraversal(root);
 
-    cout <<"\nPostorder Traversal ";
+    cout << "\nPostorder Traversal ";
     postorderTraversal(root);
-
 }
