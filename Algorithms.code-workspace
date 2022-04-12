@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\learning\\MIT-Computer-Science-and-Programming-Using-Python"
+		},
+		{
+			"path": "..\\..\\challenges\\codibility"
+		},
+		{
+			"path": "..\\..\\learning\\java\\BigO"
+		}
+	],
+	"settings": {}
+}
