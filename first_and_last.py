@@ -12,4 +12,4 @@ def first_and_last(arr, target):
 arr = [1,2,3,4,5,5,5,6,7]
 target = 5
 
-T(n) = O(n)
+# T(n) = O(n)
