@@ -1,3 +1,5 @@
+from collections import Counter
+
 def contains_all(freq1,  freq2):
     for char in freq2:
         if freq1[char] < freq2[char]:
@@ -17,3 +19,6 @@ def min_window(s, t):
             if contains_all(freqs, freqt) and length < len(shortest):
                 shortest = sub
     return shortest if len(shortest) <= n else ""
+
+    # Complexity O(n^3)
+    # Not efficient
