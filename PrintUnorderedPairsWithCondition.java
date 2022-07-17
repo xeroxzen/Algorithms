@@ -1,5 +1,5 @@
 public class PrintUnorderedPairsWithCondition {
-    void printUnorderedPairs(int[] arrayA, int[] ArrayB) {
+    void printUnorderedPairs(int[] arrayA, int[] arrayB) {
         for (int i = 0; i < arrayA.length; i++) {
             for (int j =i + 1; j< arrayB.length;j++){
                 if (arrayA[i] < arrayB[j]) {
