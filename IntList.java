@@ -2,18 +2,31 @@ public class IntList {
     public int first;
     public IntList rest;
 
-    public <intList> IntList(int f, IntList r) {
+    public IntList(int f, IntList r) {
         first = f;
         rest = r;
+    }
+
+    /**This is an IntList Constructor */
+    public IntList(int f, int i) {
+    }
+
+    /** Returns the ith item of the IntLst */
+    public int nth(int i) {
+        if (i == 0) {
+            return first;
+        }
+        return this.rest.nth(i - 1);
+
     }
 
     /** Return the size of the list using... recursion! */
     public int size() {
         if (rest == null) {
             return 1;
-        } else {
-            return 1 + this.rest.size();
         }
+        return 1 + this.rest.size();
+
     }
 
     /** Return the size of the list using... iteration! */
@@ -32,6 +45,6 @@ public class IntList {
         L = new IntList(10, L);
         L = new IntList(5, L);
 
-        System.out.println(L.iterativeSize());
+        System.out.println(L.nth(100));
     }
 }
