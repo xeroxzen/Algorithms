@@ -18,13 +18,13 @@ public class IntList {
 
     /** Return the size of the list using... iteration! */
     public int iterativeSize() {
-        int total = 0;
-        IntList current = this;
-        while (current != null) {
-            total += 1;
-            current = current.rest;
+        int totalSize = 0;
+        IntList pointer = this;
+        while (pointer != null) {
+            totalSize += 1;
+            pointer = pointer.rest;
         }
-        return total;
+        return totalSize;
     }
 
     public static void main(String[] args) {
