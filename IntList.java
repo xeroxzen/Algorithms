@@ -16,11 +16,22 @@ public class IntList {
         }
     }
 
+    /** Return the size of the list using... iteration! */
+    public int iterativeSize() {
+        int total = 0;
+        IntList current = this;
+        while (current != null) {
+            total += 1;
+            current = current.rest;
+        }
+        return total;
+    }
+
     public static void main(String[] args) {
         IntList L = new IntList(15, null);
         L = new IntList(10, L);
         L = new IntList(5, L);
 
-        System.out.println(L.size());
+        System.out.println(L.iterativeSize());
     }
 }
