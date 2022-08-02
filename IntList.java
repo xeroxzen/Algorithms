@@ -7,17 +7,8 @@ public class IntList {
         rest = r;
     }
 
-    /**This is an IntList Constructor */
+    /** This is an IntList Constructor */
     public IntList(int f, int i) {
-    }
-
-    /** Returns the ith item of the IntLst */
-    public int nth(int i) {
-        if (i == 0) {
-            return first;
-        }
-        return this.rest.nth(i - 1);
-
     }
 
     /** Return the size of the list using... recursion! */
@@ -40,11 +31,20 @@ public class IntList {
         return totalSize;
     }
 
+    /** Returns the ith item of the IntLst */
+    public int nth(int i) {
+        if (i == 0) {
+            return first;
+        }
+        return rest.nth(i - 1);
+
+    }
+
     public static void main(String[] args) {
         IntList L = new IntList(15, null);
         L = new IntList(10, L);
         L = new IntList(5, L);
 
-        System.out.println(L.nth(100));
+        System.out.println(L.nth(3));
     }
 }

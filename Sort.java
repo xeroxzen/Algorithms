@@ -1,5 +1,5 @@
 public class Sort {
-    static void sort(int[] Array) {
+    public static void sort(int[] Array) {
         for (int i = 1; i < Array.length; i += 1) {
             int x = Array[i];
             int j;
@@ -9,6 +9,11 @@ public class Sort {
             }
 
         }
+    }
+
+    public static void main(String[] args) {
+        // print a sorted array
+        
     }
 
 }
