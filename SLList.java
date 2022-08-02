@@ -4,7 +4,20 @@
  */
 
 public class SLList {
-    public IntNode first;
+    // IntNode variable
+    // Note: Please do not mess with first
+    private IntNode first;
+
+    // Nested classes
+    public class IntNode {
+        public int item;
+        public IntNode next;
+
+        public IntNode(int f, IntNode r) {
+            item = f;
+            next = r;
+        }
+    }
 
     // SLList constructor
     public SLList(int x) {
@@ -12,9 +25,11 @@ public class SLList {
         first = new IntNode(x, null);
     }
 
+    // Method to add first element
     public void addFirst(int x) {
         first = new IntNode(x, first);
     }
+
 
     public int getFirst() {
         return first.item;
