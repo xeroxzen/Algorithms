@@ -3,7 +3,7 @@ import static java.lang.reflect.Array.newInstance;
 import java.util.*;
 import java.util.Collection;
 
-public class ArrayCollection<T> implements Collection<T> {
+public class ArrayCollection<T> implements AbstractCollection<T> {
     private T[] data;
 
     /** An empty Collection */
