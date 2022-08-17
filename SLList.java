@@ -24,6 +24,7 @@ public class SLList<Zen> {
     /** The first item (if it exists) is at sentinel.next */
     private StuffNode sentinel;
     private int size;
+    public int length;
 
     /** creates an empty SLList */
     public SLList() {
