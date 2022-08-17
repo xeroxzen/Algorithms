@@ -50,7 +50,7 @@ public class SLList<Zen> {
     }
 
     /** Adds x to the end of the last */
-    public void addLast(int x) {
+    public void addLast(Zen x) {
         size += 1;
 
         /**
