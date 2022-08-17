@@ -47,6 +47,15 @@ public class SLList {
     /** Adds x to the end of the last */
     public void addLast(int x) {
         size += 1;
+
+        /**
+         * This is a bit ugly of course.
+         * if (sentinel == null) {
+         * sentinel = new IntNode(x, null);
+         * return;
+         * }
+         */
+
         IntNode p = sentinel;
 
         /** Move p until it reaches the end of the list. */
@@ -63,8 +72,8 @@ public class SLList {
 
     public static void main(String[] args) {
         SLList L = new SLList();
-        // L.addFirst(10);
-        // L.addFirst(5);
+        L.addFirst(10);
+        L.addFirst(5);
         L.addLast(20);
         System.out.println(L.size());
     }

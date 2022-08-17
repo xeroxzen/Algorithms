@@ -9,7 +9,7 @@ def min_window(s, t):
     for length in range(1, n+1):
         freqs = Counter()
         satisfied = 0
-        for char = in s[:length]:
+        for char in s[:length]:
             freqs[char] += 1
             if char in freqt and freqs[char] == freq[ch]:
                 satisfied += 1
